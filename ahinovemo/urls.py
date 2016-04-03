@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """ahinovemo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,9 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url,include
-=======
 from django.conf.urls import url
->>>>>>> 3ed2fe480133e3721539aafa0fcbc8853ad3f61e
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
@@ -26,6 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/',
     	include('accounts.urls',namespace="accounts")),
+    url('', include('social.apps.django_app.urls', namespace='social'))
 
 
 ]
