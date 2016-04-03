@@ -1,0 +1,23 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+font{
+	font-family: 'Raleway', sans-serif;
+}
+.color{
+	height: 463px;
+}
+.margin-auto{
+
+}
+header .barra-navegadora{
+	height: 83px;
+	background-color: white;
+}
+header .logo{
+	width: 140px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 15px;
+}
